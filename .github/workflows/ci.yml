@@ -31,7 +31,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           GITEE_TOKEN: ${{ secrets.GITEE_TOKEN}}
           ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
-        run: npm install && npm run deploy
+        run: npm install --audit=false && npm run deploy
       
 #       - name: DeployGitee
 #         uses: okou19900722/gitee-pages@v1
