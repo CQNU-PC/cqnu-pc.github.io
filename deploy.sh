@@ -23,6 +23,7 @@ git pull $githubUrl main
 
 git checkout main
 
+npm audit fix
 npm run build # 生成静态文件
 
 git add -A
